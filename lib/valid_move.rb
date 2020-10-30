@@ -1,10 +1,10 @@
 # code your #valid_move? method here
 def valid_move?(board, index)
-  if board[index].to_i >= 0 && board[index].to_i <= 8 
+  if board[index].to_i < 0 || board[index].to_i > 8
+    puts "You must move to a position within the tic-tac-toe board"
   elsif board[index] != " " && board[index] != "" && board[index] != nil
     puts "The potision must be vacant, not currently taken by a player"
-  else
-    puts "You must move to a position within the tic-tac-toe board"
+  else board[index].to_i >= 0 && board[index].to_i <= 8 
   end
 end
 
