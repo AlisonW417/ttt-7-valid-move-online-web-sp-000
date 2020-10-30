@@ -1,7 +1,7 @@
 # code your #valid_move? method here
 def valid_move?(board, index)
  if board[index].to_i < 0 || board[index].to_i > 8
-   puts "you must "
+   puts "You must move to a position within the tic-tac-toe board. "
  if board[index] != " " && board[index] != "" && board[index] != nil
   else board[index].to_i.between?(0,8)
   end
