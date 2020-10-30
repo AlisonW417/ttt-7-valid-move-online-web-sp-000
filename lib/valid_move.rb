@@ -5,8 +5,7 @@ def valid_move?(board, index)
   elsif board[index].to_i >= 0 && board[index].to_i <= 8
     puts "Nice move"
   else
-    puts ""
-  
+    puts "You must move to a position within the tic-tac-toe board"
   end
 end
 
