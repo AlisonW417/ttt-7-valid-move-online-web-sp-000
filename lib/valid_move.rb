@@ -4,7 +4,7 @@ def valid_move?(board, index)
    puts "You must move to a position within the tic-tac-toe board"
  elsif board[index] != " " && board[index] != "" && board[index] != nil
    puts "The position must be vacant, not currently taken by a player"
-  else board[index].to_i.between?(0,8) && board[index] == " " && board[index] == "" && board[index] == nil
+  else board[index].to_i.between?(0,8)
   end
 end
 
